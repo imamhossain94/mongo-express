@@ -4,8 +4,7 @@ const Ninja = require('../models/ninja');
 
 //get a list of ninjas from the db
 router.get('/ninjas', (req, res, next)=> {
-    console.log('hello world');
-    res.send({type:'GET'});
+    
 });
 
 //add a new ninja to the db
