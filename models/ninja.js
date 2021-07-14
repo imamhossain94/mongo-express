@@ -10,7 +10,7 @@ const GeoSchema = new Schema({
     },
     coordinates: {
         type: [Number],
-        index: "2desphere"
+        index: "2dsphere"
     }
 });
 
