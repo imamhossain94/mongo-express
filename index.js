@@ -12,6 +12,7 @@ app.use(express.urlencoded({
 mongoose.connect('mongodb://localhost/ninjago');
 mongoose.Promise = global.Promise;
 
+app.use(express.static('public'));
 //initializing routes
 app.use('/api', require('./routes/api'));
 
