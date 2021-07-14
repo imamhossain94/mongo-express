@@ -15,6 +15,12 @@ mongoose.Promise = global.Promise;
 //initializing routes
 app.use('/api', require('./routes/api'));
 
+
+// error handling middleware
+app.use((err, req, res, next)=>{
+    res.status(422).send({error: err.message});
+});
+
 //listen for requests
 app.listen( 4000, ()=> {
     console.log("App running");
