@@ -1,17 +1,25 @@
 {
-  "name": "express-mongo",
+  "name": "net-ninja-rest-api",
   "version": "1.0.0",
-  "description": "",
+  "description": "Working through Net Ninjas REST API tutorials",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rtw590/net-ninja-rest-api.git"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rtw590/net-ninja-rest-api/issues"
+  },
+  "homepage": "https://github.com/rtw590/net-ninja-rest-api#readme",
   "dependencies": {
-    "body-parser": "^1.19.0",
-    "express": "^4.17.1",
-    "mongoose": "^5.13.2"
+    "body-parser": "^1.18.2",
+    "express": "^4.16.2",
+    "mongoose": "^5.0.7"
   }
 }

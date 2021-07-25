@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <title>Ninjago</title>
         <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
-        <link href="/public/styles.css" rel="stylesheet" type="css/text" />
+        <link href="/styles.css" rel="stylesheet" />
     </head>
     <body>
 
@@ -14,7 +14,6 @@
             <div id="ninjas"></div>
         </div>
 
-       
         <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
         <script src="https://unpkg.com/react@15/dist/react.js"></script>
         <script src="https://unpkg.com/react-dom@15/dist/react-dom.min.js"></script>
@@ -32,10 +31,10 @@
                 ninjas = ninjas.map(function(ninja, index){
                     return(
                         <li key={index}>
-                            <span className={ninja.obj.available}></span>
-                            <span className="name">{ninja.obj.name}</span>
-                            <span className="rank">{ninja.obj.rank}</span>
-                            <span className="dist">{Math.floor(ninja.dis / 1000)} km</span>
+                            <span className={ninja.available}></span> 
+                            <span className="name">{ninja.name}</span> 
+                            <span className="rank">{ninja.rank}</span> 
+                            <span className="dist">{Math.floor(ninja.dist.calculated / 1000)} km</span>
                         </li>
                     );
                 });
@@ -69,6 +68,7 @@
         });
         ReactDOM.render(<Ninjas />, document.getElementById('ninjas'));
         </script>
+
 
     </body>
 </html>
