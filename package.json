@@ -1,5 +1,5 @@
 {
-  "name": "net-ninja-rest-api",
+  "name": "express-demo",
   "version": "1.0.0",
   "description": "Working through Net Ninjas REST API tutorials",
   "main": "index.js",
